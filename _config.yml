@@ -1,0 +1,15 @@
+root:             public
+dest:             <%= site.root %>
+assets:           <%= site.dest %>/assets
+
+data:             data/*.{json,yml}
+
+templates:        templates
+includes:         <%= site.templates %>/includes/*.hbs
+layouts:          <%= site.templates %>/layouts
+layout:           default.hbs
+
+helpers:          
+  - <%= site.templates %>/helpers/*.js
+
+description:      <%= pkg.description %>

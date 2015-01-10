@@ -1,0 +1,11 @@
+---
+title: Example
+content: ['content/todo-today.md', 'content/todo-tomorrow.md']
+---
+
+### {{title}}
+
+{{site.description}}
+{{#each content}}
+{{str this}}
+{{/each}}
